@@ -1,16 +1,19 @@
-// add social sharing 
-// go to social-sharing.liquid and add this code 
+## add social sharing 
+## go to social-sharing.liquid and add this code 
+```
    {% endif %}
       {% if settings.share_whatsup %}
       <a href="https://api.whatsapp.com/send/?phone&text={{ url }}" target="_blank" class="mr-4 inline-flex items-center justify-center w-6">
         {% render 'icon', name: 'whatsapp', size: 'small' %}
       </a>
     {% endif %}
-    
- go to settings_schema.json  and add this code : 
+ ```   
+ ## go to settings_schema.json  and add this code : 
+ ```
    {
         "type": "checkbox",
         "id": "share_whatsup",
         "label": "Pin on Whatsup",
         "default": true
       }
+```
